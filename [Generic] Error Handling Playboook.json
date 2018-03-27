@@ -1,0 +1,2350 @@
+{
+    "blockly": false,
+    "blockly_xml": "<xml></xml>",
+    "category": "Accenture_Dev",
+    "coa": {
+        "data": {
+            "clean": true,
+            "code_block": "import requests\nimport os\nimport collections\nimport ordereddict",
+            "description": "",
+            "hash": "a9d89816e25d17c06b40ac86fe6a708fe87ab413",
+            "joint": {
+                "cells": [
+                    {
+                        "attrs": {
+                            ".connection": {
+                                "stroke": "#6C7A89",
+                                "stroke-width": 2
+                            },
+                            ".marker-target": {
+                                "d": "M 10 0 L 0 5 L 10 10 z",
+                                "fill": "#6a6c8a",
+                                "stroke": "#6a6c8a"
+                            }
+                        },
+                        "connector": {
+                            "args": {
+                                "radius": 5
+                            },
+                            "name": "rounded"
+                        },
+                        "endDirections": [
+                            "left"
+                        ],
+                        "id": "f8720ea3-433a-4358-aa99-54ff9e20c442",
+                        "router": {
+                            "name": "metro"
+                        },
+                        "source": {
+                            "id": "3809fe39-8b6f-4797-871f-f3f7178c7f29",
+                            "port": "out-1",
+                            "selector": "g:nth-child(1) > g:nth-child(2) > g:nth-child(1) > circle:nth-child(1)"
+                        },
+                        "startDirections": [
+                            "right"
+                        ],
+                        "target": {
+                            "id": "b7ee82d9-de2f-468b-8caf-35235a409074",
+                            "selector": ".port-body[type=\"input\"]"
+                        },
+                        "type": "link",
+                        "z": 170
+                    },
+                    {
+                        "attrs": {
+                            ".connection": {
+                                "stroke": "#6C7A89",
+                                "stroke-width": 2
+                            },
+                            ".marker-target": {
+                                "d": "M 10 0 L 0 5 L 10 10 z",
+                                "fill": "#6a6c8a",
+                                "stroke": "#6a6c8a"
+                            }
+                        },
+                        "connector": {
+                            "args": {
+                                "radius": 5
+                            },
+                            "name": "rounded"
+                        },
+                        "endDirections": [
+                            "left"
+                        ],
+                        "id": "21975bbf-18c1-44b4-895a-81f46d5abfd1",
+                        "router": {
+                            "name": "metro"
+                        },
+                        "source": {
+                            "id": "b7ee82d9-de2f-468b-8caf-35235a409074",
+                            "port": null,
+                            "selector": "g:nth-child(1) > g:nth-child(2) > g:nth-child(1) > circle:nth-child(1)"
+                        },
+                        "startDirections": [
+                            "right"
+                        ],
+                        "target": {
+                            "id": "5be2bf8a-9e7b-49b1-a464-7bac4699a897",
+                            "port": null,
+                            "selector": "g:nth-child(1) > g:nth-child(1) > g:nth-child(1) > circle:nth-child(1)"
+                        },
+                        "type": "link",
+                        "z": 172
+                    },
+                    {
+                        "attrs": {
+                            ".connection": {
+                                "stroke": "#6C7A89",
+                                "stroke-width": 2
+                            },
+                            ".marker-target": {
+                                "d": "M 10 0 L 0 5 L 10 10 z",
+                                "fill": "#6a6c8a",
+                                "stroke": "#6a6c8a"
+                            }
+                        },
+                        "connector": {
+                            "args": {
+                                "radius": 5
+                            },
+                            "name": "rounded"
+                        },
+                        "endDirections": [
+                            "left"
+                        ],
+                        "id": "69a14c64-6e4f-4904-87a9-df885b290524",
+                        "router": {
+                            "name": "metro"
+                        },
+                        "source": {
+                            "id": "df0be392-4778-439e-a1e9-f941e29cbbf8",
+                            "port": "out-1",
+                            "selector": "g:nth-child(1) > g:nth-child(2) > g:nth-child(1) > circle:nth-child(1)"
+                        },
+                        "startDirections": [
+                            "right"
+                        ],
+                        "target": {
+                            "id": "292b04ec-be0d-4fce-bca6-d4359c116138",
+                            "selector": ".port-body[type=\"input\"]"
+                        },
+                        "type": "link",
+                        "z": 271
+                    },
+                    {
+                        "attrs": {
+                            ".connection": {
+                                "stroke": "#6C7A89",
+                                "stroke-width": 2
+                            },
+                            ".marker-target": {
+                                "d": "M 10 0 L 0 5 L 10 10 z",
+                                "fill": "#6a6c8a",
+                                "stroke": "#6a6c8a"
+                            }
+                        },
+                        "connector": {
+                            "args": {
+                                "radius": 5
+                            },
+                            "name": "rounded"
+                        },
+                        "endDirections": [
+                            "left"
+                        ],
+                        "id": "fd027086-e57a-4028-9cdd-671af7e495ec",
+                        "router": {
+                            "name": "metro"
+                        },
+                        "source": {
+                            "id": "292b04ec-be0d-4fce-bca6-d4359c116138",
+                            "port": null,
+                            "selector": "g:nth-child(1) > g:nth-child(2) > g:nth-child(1) > circle:nth-child(1)"
+                        },
+                        "startDirections": [
+                            "right"
+                        ],
+                        "target": {
+                            "id": "5be2bf8a-9e7b-49b1-a464-7bac4699a897",
+                            "port": null,
+                            "selector": "g:nth-child(1) > g:nth-child(1) > g:nth-child(1) > circle:nth-child(1)"
+                        },
+                        "type": "link",
+                        "z": 280
+                    },
+                    {
+                        "attrs": {
+                            ".connection": {
+                                "stroke": "#6C7A89",
+                                "stroke-width": 2
+                            },
+                            ".marker-target": {
+                                "d": "M 10 0 L 0 5 L 10 10 z",
+                                "fill": "#6a6c8a",
+                                "stroke": "#6a6c8a"
+                            }
+                        },
+                        "connector": {
+                            "args": {
+                                "radius": 5
+                            },
+                            "name": "rounded"
+                        },
+                        "endDirections": [
+                            "left"
+                        ],
+                        "id": "c2c14696-4a37-4a93-b88e-6252c6757d25",
+                        "router": {
+                            "name": "metro"
+                        },
+                        "source": {
+                            "id": "14822ed8-e2af-4dfc-81a0-6b397cd1aaf6",
+                            "port": "out-1",
+                            "selector": "g:nth-child(1) > g:nth-child(2) > g:nth-child(1) > circle:nth-child(1)"
+                        },
+                        "startDirections": [
+                            "right"
+                        ],
+                        "target": {
+                            "id": "df0be392-4778-439e-a1e9-f941e29cbbf8",
+                            "port": "in",
+                            "selector": "g:nth-child(1) > g:nth-child(1) > g:nth-child(1) > circle:nth-child(1)"
+                        },
+                        "type": "link",
+                        "z": 287
+                    },
+                    {
+                        "attrs": {
+                            ".connection": {
+                                "stroke": "#6C7A89",
+                                "stroke-width": 2
+                            },
+                            ".marker-target": {
+                                "d": "M 10 0 L 0 5 L 10 10 z",
+                                "fill": "#6a6c8a",
+                                "stroke": "#6a6c8a"
+                            }
+                        },
+                        "connector": {
+                            "args": {
+                                "radius": 5
+                            },
+                            "name": "rounded"
+                        },
+                        "endDirections": [
+                            "left"
+                        ],
+                        "id": "3e57c63e-da90-4207-97a1-c5e89ffaf7ca",
+                        "router": {
+                            "name": "metro"
+                        },
+                        "source": {
+                            "id": "14822ed8-e2af-4dfc-81a0-6b397cd1aaf6",
+                            "port": "out-2",
+                            "selector": "g:nth-child(1) > g:nth-child(2) > g:nth-child(2) > circle:nth-child(1)"
+                        },
+                        "startDirections": [
+                            "right"
+                        ],
+                        "target": {
+                            "id": "df0be392-4778-439e-a1e9-f941e29cbbf8",
+                            "port": "in",
+                            "selector": "g:nth-child(1) > g:nth-child(1) > g:nth-child(1) > circle:nth-child(1)"
+                        },
+                        "type": "link",
+                        "z": 288
+                    },
+                    {
+                        "attrs": {
+                            ".connection": {
+                                "stroke": "#6C7A89",
+                                "stroke-width": 2
+                            },
+                            ".marker-target": {
+                                "d": "M 10 0 L 0 5 L 10 10 z",
+                                "fill": "#6a6c8a",
+                                "stroke": "#6a6c8a"
+                            }
+                        },
+                        "connector": {
+                            "args": {
+                                "radius": 5
+                            },
+                            "name": "rounded"
+                        },
+                        "endDirections": [
+                            "left"
+                        ],
+                        "id": "1a00c041-c757-41cc-8b6f-ff41bef38917",
+                        "router": {
+                            "name": "metro"
+                        },
+                        "source": {
+                            "id": "33946a69-8ec1-4890-88f9-cc7c0c30e7d6",
+                            "port": null,
+                            "selector": "g:nth-child(1) > g:nth-child(2) > g:nth-child(1) > circle:nth-child(1)"
+                        },
+                        "startDirections": [
+                            "right"
+                        ],
+                        "target": {
+                            "id": "75e607ba-153b-4419-8656-bb5305b5399d",
+                            "selector": ".port-body[type=\"input\"]"
+                        },
+                        "type": "link",
+                        "z": 407
+                    },
+                    {
+                        "attrs": {
+                            ".connection": {
+                                "stroke": "#6C7A89",
+                                "stroke-width": 2
+                            },
+                            ".marker-target": {
+                                "d": "M 10 0 L 0 5 L 10 10 z",
+                                "fill": "#6a6c8a",
+                                "stroke": "#6a6c8a"
+                            }
+                        },
+                        "connector": {
+                            "args": {
+                                "radius": 5
+                            },
+                            "name": "rounded"
+                        },
+                        "endDirections": [
+                            "left"
+                        ],
+                        "id": "0fad818f-f949-4cce-a51c-74286be8e879",
+                        "router": {
+                            "name": "metro"
+                        },
+                        "source": {
+                            "id": "75e607ba-153b-4419-8656-bb5305b5399d",
+                            "port": null,
+                            "selector": "g:nth-child(1) > g:nth-child(2) > g:nth-child(1) > circle:nth-child(1)"
+                        },
+                        "startDirections": [
+                            "right"
+                        ],
+                        "target": {
+                            "id": "c120ac3d-f560-4fdf-a764-900b59920be3",
+                            "selector": ".port-body[type=\"input\"]"
+                        },
+                        "type": "link",
+                        "z": 421
+                    },
+                    {
+                        "attrs": {
+                            ".connection": {
+                                "stroke": "#6C7A89",
+                                "stroke-width": 2
+                            },
+                            ".marker-target": {
+                                "d": "M 10 0 L 0 5 L 10 10 z",
+                                "fill": "#6a6c8a",
+                                "stroke": "#6a6c8a"
+                            }
+                        },
+                        "connector": {
+                            "args": {
+                                "radius": 5
+                            },
+                            "name": "rounded"
+                        },
+                        "endDirections": [
+                            "left"
+                        ],
+                        "id": "96addbe9-0a17-4f00-8f1a-0ac73d34365a",
+                        "router": {
+                            "name": "metro"
+                        },
+                        "source": {
+                            "id": "c120ac3d-f560-4fdf-a764-900b59920be3",
+                            "port": "out-1",
+                            "selector": "g:nth-child(1) > g:nth-child(2) > g:nth-child(1) > circle:nth-child(1)"
+                        },
+                        "startDirections": [
+                            "right"
+                        ],
+                        "target": {
+                            "id": "e43843f6-7baa-4a37-a0ce-fcc5f5bf88f2",
+                            "selector": ".port-body[type=\"input\"]"
+                        },
+                        "type": "link",
+                        "z": 533
+                    },
+                    {
+                        "active": false,
+                        "angle": 0,
+                        "attrs": {
+                            ".background": {
+                                "transform": "rotate(45 30 70)"
+                            },
+                            ".border": {
+                                "transform": "rotate(45 30 70)"
+                            },
+                            ".inPorts>.port-0>.port-body": {
+                                "port": {
+                                    "id": "in",
+                                    "type": "in"
+                                }
+                            },
+                            ".number": {
+                                "text": 2
+                            },
+                            ".outPorts>.port-0": {
+                                "port": {
+                                    "id": "out-1",
+                                    "type": "out"
+                                },
+                                "ref-x": 83,
+                                "ref-y": 40
+                            },
+                            ".outPorts>.port-0>.port-body": {
+                                "port": {
+                                    "id": "out-1",
+                                    "type": "out"
+                                }
+                            },
+                            "g.error": {
+                                "opacity": 0
+                            },
+                            "g.icon image": {
+                                "xlink:href": "/inc/coa/img/icon_triangle_warn.svg"
+                            },
+                            "g.notes": {
+                                "display": "block",
+                                "opacity": 1
+                            }
+                        },
+                        "block_code": "# read-only block view not available",
+                        "callback_code": "",
+                        "callback_start": 1,
+                        "callsback": false,
+                        "connected_to_start": false,
+                        "connection_name": "",
+                        "connection_type": "",
+                        "custom_callback": "",
+                        "custom_code": "def SOC_Email_Format(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None):\n    phantom.debug('SOC_Email_Format() called')\n    #Redoes a lot of information gathering since palybook may fail before objects are created.\n    \n    #Gather Correlated Event Data\n    correlated_arcsight_data = phantom.collect2(container=container, datapath=['filtered-data:filter_1:condition_1:artifact:*.cef.eventId', \n                                                                   'filtered-data:filter_1:condition_1:artifact:*.cef.name',\n                                                                   'filtered-data:filter_1:condition_1:artifact:*.cef.message'                                                     \n                                                                   ])\n    #Gather Hostname data from event\n    container_data = phantom.collect2(container=container, datapath=['artifact:*.cef.destinationHostName', 'artifact:*.cef.deviceCustomString4'])    \n    hostname = None \n    try:\n        for hostname_data in container_data:\n            if hostname_data[0]:\n                hostname = hostname_data[0]\n            elif hostname_data[1]:\n                hostname = hostname_data[1]\n        correlated_arcsight_data[0].append(hostname)\n    except Exception as e:\n        phantom.debug('DEBUG: HostNotInFlexnet - Hostname data is not available. {}'.format(e))\n\n    #Gather base event data\n    base_arcsight_data = phantom.collect2(container=container, datapath=['filtered-data:filter_1:condition_2:artifact:*.cef.destinationAddress',  \n                                                                   'filtered-data:filter_1:condition_2:artifact:*.cef.destinationUserName',\n                                                                   'filtered-data:filter_1:condition_2:artifact:*.cef.managerReceiptTime',\n                                                                   'filtered-data:filter_1:condition_2:artifact:*.cef.startTime',\n                                                                   'filtered-data:filter_1:condition_2:artifact:*.cef.endTime',\n                                                                   'filtered-data:filter_1:condition_2:artifact:*.cef.deviceCustomString1',\n                                                                   'filtered-data:filter_1:condition_2:artifact:*.cef.fileName',\n                                                                   'filtered-data:filter_1:condition_2:artifact:*.cef.filePath'\n                                                                  ])\n    \n    #Create final arcsight data list\n    arcsight_data = None\n    try:\n        arcsight_data = correlated_arcsight_data[0] + base_arcsight_data[0]\n    except Exception as e:\n        phantom.debug(\"Arcsight Data not populated: {}\".format(e))\n    \n    incident_content_id = ''\n    archer_data = phantom.collect2(container=container, datapath=['artifact:*.cef.incidentContentId'])\n    for data in archer_data:\n        if data[0]:\n            incident_content_id = data[0]\n            \n    base_content_id = ''\n    base_alert_data = phantom.collect2(container=container, datapath=['artifact:*.cef.baseContentId'])\n    for data in base_alert_data:\n        if data[0]:\n            base_content_id = data[0]\n    \n    correlated_content_id = ''\n    correlated_alert_data = phantom.collect2(container=container, datapath=['artifact:*.cef.correlatedContentId'])\n    for data in correlated_alert_data:\n        if data[0]:\n            correlated_content_id = data[0]\n    #Create lists that correspond with collected data. Must match 1 to 1. These values will be the names in the table - Name | Value \n    arcsight_data_list = ['Event Id',\n                          'Name',\n                          'Message',\n                          'Hostname',\n                          'IP Address',\n                          'Username',\n                          'Manager Receipt Time',\n                          'Start Time',\n                          'End Time',\n                          'Virus Name',\n                          'File Name',\n                          'File Path'\n                         ]  \n    archer_data_list = ['Created Security Incident']\n    base_alert_data_list = ['Created Base Alert']\n    correlated_alert_data_list = ['Created Correlated Alert']\n    \n    #Instantiate dictionaries using the above lists. Default value is ''\n    arcsight_data_dict = ordereddict.OrderedDict([(i,'') for i in arcsight_data_list])\n    archer_data_dict = {'Security Incident': str(incident_content_id)}\n    base_alert_data_dict = {'Created Base Alert': str(base_content_id)}\n    correlated_alert_data_dict = {'Created Correlated Alert': str(correlated_content_id)}\n    \n    #Populate Arcsight Dictionary\n    try:\n        if arcsight_data:\n            for k,v in zip(arcsight_data_list,arcsight_data):\n                if v:\n                    if 'Time' in k:\n                        v = datetime.strptime(v,\"%Y-%m-%dT%H:%M:%S.%fZ\").strftime('%d %b %Y %H:%M:%S GMT')\n                    arcsight_data_dict[k] = v\n    except Exception as e:\n        phantom.debug(\"Arcsight Data dict not populated: {}\".format(e))\n    \n    #Define Email Header and Email Banner\n    body=\"<html><head>\"\n    body+=\"<style>\"\n    body+=\"body {font-family: Calibri, Verdana, Ariel, sans-serif}\"\n    body+=\"table {border-collapse: collapse;} th, td {text-align: left; padding: 5px; border: 1px solid black}\"\n    body+=\"th {background-color: #808080; color: white;}\"\n    body+=\"th, h3 {text-align: center;}\"\n    body+=\"</style></head>\"\n\n    body+=\"<body>\"\n    #body+=\"<img src='https://circles.accenture.com/Resources/34fd89eb-3bed-4029-be72-685ab83846e1/banner.jpg?v=09:06:40'>\"\n\n    #Define Text to display before tables\n    body+=\"<h3><strong>Attention: SOC Team</strong></h3>\"\n    body+=\"<p><strong style='color: red;'>Action required - An error was encountered while executing the playbook.Please take the following actions:</strong></p>\"\n    body+=\"<ol>\"\n    body+=\"<li>Notify the ActiveDefense.admin@accenture.com distribution list and attach this General Error email</li>\"\n    body+=\"<li>Delete any created Archer Incidents or Alerts manually. Any created Incidents or Alerts will be listed below.</li>\"\n    body+=\"<li>Navigate to the Phantom Malware Active Channel in Arcsight</li>\"\n    body+=\"<li>Identify the correlated alert via the Event Id provided below</li>\"\n    body+=\"<li>Triage, remediate, and close the alert manually via the standard SOC process</li>\"\n    body+=\"</ol>\"\n    body+=\"<div align='center'>\"\n    \n    #Display Arcsight data in Table\n    body+=\"<table>\"\n    body+=\"<tr><th colspan='2'>Event Details</th></tr>\"\n    if arcsight_data_dict['Event Id'] != '':\n        for k,v in arcsight_data_dict.items():\n            body += '<tr><td>' + k + '</td>'\n            body += '<td>' + str(v) + '</td></tr>'\n    else:\n        body += \"<tr><td align='center'>Arcsight Details are not available</td></tr>\"\n    body += '</table><br>'\n\n    #Display Archer data in Table\n    body+=\"<table>\"\n    body+=\"<tr><th colspan='2'>Archer Details</th></tr>\"\n    if archer_data_dict['Security Incident'] != '':\n        for k,v in archer_data_dict.items():\n            body += '<tr><td>' + k + '</td>'        \n            body += '<td>' \"<a href='https://egrc.accenture.com/apps/ArcherApp/Home.aspx#record/459/264/\" + str(v)+\"'>\" + str(v) + '</a>' '</td></tr>'\n    else:\n        body += \"<tr><td align='center'>Security Incident was not created</td></tr>\"\n    #Populate Base Alert data in Table\n    if base_alert_data_dict['Created Base Alert'] != '':\n        for k,v in base_alert_data_dict.items():\n            body += '<tr><td>' + k + '</td>'\n            body += '<td>' \"<a href='https://egrc.accenture.com/apps/ArcherApp/Home.aspx#record/459/265/\" + str(v)+\"'>\" + str(v) + '</a>' '</td></tr>'\n    else:\n        body += \"<tr><td align='center'>Base Alert was not created</td></tr>\"\n    #Populate Correlated Alert data in Table\n    if correlated_alert_data_dict['Created Correlated Alert'] != '':\n        for k,v in correlated_alert_data_dict.items():\n            body += '<tr><td>' + k + '</td>'\n            body += '<td>' \"<a href='https://egrc.accenture.com/apps/ArcherApp/Home.aspx#record/459/264/\" + str(v)+\"'>\" + str(v) + '</a>''</td></tr>'\n    else:\n        body += \"<tr><td align='center'>Correlated Alert was not created</td></tr>\"\n    body += '</table><br>'\n    body+=\"</div>\"\n    \n    #Define Email Footer and Container ID\n    body+=\"<p>Container ID: {} </p>\".format(str(container['id']))\n    body+=\"<p><strong style='color: black;'>Sent from Phantom Tool</strong></p>\"\n    body+=\"</body></html>\"\n       \n    \n    # parameter list for template variable replacement\n    parameters = []\n\n    phantom.format(container=container, template=body.encode(\"utf-8\"), parameters=parameters, name=\"SOC_Email_Format\")\n\n    SOC_Email(container=container)\n\n    return",
+                        "custom_join": "",
+                        "custom_name": "SOC Email Format",
+                        "description": "Format the data for the SOC Email, contains less data than the Error Handling Email",
+                        "has_custom": true,
+                        "has_custom_block": true,
+                        "has_custom_callback": false,
+                        "has_custom_join": false,
+                        "id": "df0be392-4778-439e-a1e9-f941e29cbbf8",
+                        "inPorts": [
+                            "in"
+                        ],
+                        "join_code": "",
+                        "join_optional": [],
+                        "join_start": 1,
+                        "line_end": 200,
+                        "line_start": 33,
+                        "name": "format",
+                        "notes": "Format the data for the SOC Email, contains less data than the Error Handling Email",
+                        "number": 2,
+                        "outPorts": [
+                            "out-1"
+                        ],
+                        "parameters": [
+                            {
+                                "position": 0,
+                                "type": "",
+                                "value": ""
+                            }
+                        ],
+                        "ports": {
+                            "groups": {
+                                "in": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "left"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "left"
+                                    }
+                                },
+                                "out": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "right"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "right"
+                                    }
+                                }
+                            }
+                        },
+                        "position": {
+                            "x": 400,
+                            "y": 220
+                        },
+                        "previous_function": "",
+                        "previous_name": "SOC_Email_Format",
+                        "show_number": true,
+                        "size": {
+                            "height": 82,
+                            "width": 82
+                        },
+                        "state": "format",
+                        "status": "",
+                        "template": "{0}",
+                        "type": "coa.Format",
+                        "warn": false,
+                        "z": 638
+                    },
+                    {
+                        "attrs": {
+                            ".connection": {
+                                "stroke": "#6C7A89",
+                                "stroke-width": 2
+                            },
+                            ".marker-target": {
+                                "d": "M 10 0 L 0 5 L 10 10 z",
+                                "fill": "#6a6c8a",
+                                "stroke": "#6a6c8a"
+                            }
+                        },
+                        "connector": {
+                            "args": {
+                                "radius": 5
+                            },
+                            "name": "rounded"
+                        },
+                        "endDirections": [
+                            "left"
+                        ],
+                        "id": "e8bc38ec-0325-46f4-aff1-b5e814227919",
+                        "router": {
+                            "name": "metro"
+                        },
+                        "source": {
+                            "id": "e43843f6-7baa-4a37-a0ce-fcc5f5bf88f2",
+                            "port": null,
+                            "selector": "g:nth-child(1) > g:nth-child(2) > g:nth-child(1) > circle:nth-child(1)"
+                        },
+                        "startDirections": [
+                            "right"
+                        ],
+                        "target": {
+                            "id": "3809fe39-8b6f-4797-871f-f3f7178c7f29",
+                            "port": "in",
+                            "selector": "g:nth-child(1) > g:nth-child(1) > g:nth-child(1) > circle:nth-child(1)"
+                        },
+                        "type": "link",
+                        "z": 677
+                    },
+                    {
+                        "attrs": {
+                            ".connection": {
+                                "stroke": "#6C7A89",
+                                "stroke-width": 2
+                            },
+                            ".marker-target": {
+                                "d": "M 10 0 L 0 5 L 10 10 z",
+                                "fill": "#6a6c8a",
+                                "stroke": "#6a6c8a"
+                            }
+                        },
+                        "connector": {
+                            "args": {
+                                "radius": 5
+                            },
+                            "name": "rounded"
+                        },
+                        "endDirections": [
+                            "left"
+                        ],
+                        "id": "baf92799-186b-4b6c-b0c9-f0108fdf5f75",
+                        "router": {
+                            "name": "metro"
+                        },
+                        "source": {
+                            "id": "33946a69-8ec1-4890-88f9-cc7c0c30e7d6",
+                            "port": null,
+                            "selector": "g:nth-child(1) > g:nth-child(2) > g:nth-child(1) > circle:nth-child(1)"
+                        },
+                        "startDirections": [
+                            "right"
+                        ],
+                        "target": {
+                            "id": "14822ed8-e2af-4dfc-81a0-6b397cd1aaf6",
+                            "port": "in",
+                            "selector": "g:nth-child(1) > g:nth-child(1) > g:nth-child(1) > circle:nth-child(1)"
+                        },
+                        "type": "link",
+                        "z": 682
+                    },
+                    {
+                        "active": false,
+                        "angle": 0,
+                        "attrs": {
+                            ".background": {
+                                "transform": "rotate(45 30 70)"
+                            },
+                            ".border": {
+                                "transform": "rotate(45 30 70)"
+                            },
+                            ".inPorts>.port-0>.port-body": {
+                                "port": {
+                                    "id": "in",
+                                    "type": "in"
+                                }
+                            },
+                            ".number": {
+                                "text": 1
+                            },
+                            ".outPorts>.port-0": {
+                                "port": {
+                                    "id": "out-1",
+                                    "type": "out"
+                                },
+                                "ref-x": 83,
+                                "ref-y": 40
+                            },
+                            ".outPorts>.port-0>.port-body": {
+                                "port": {
+                                    "id": "out-1",
+                                    "type": "out"
+                                }
+                            },
+                            ".outPorts>.port-1": {
+                                "port": {
+                                    "id": "out-2",
+                                    "type": "out"
+                                },
+                                "ref-x": 41,
+                                "ref-y": 82
+                            },
+                            ".outPorts>.port-1>.port-body": {
+                                "port": {
+                                    "id": "out-2",
+                                    "type": "out"
+                                }
+                            },
+                            "g.error": {
+                                "opacity": 0
+                            },
+                            "g.icon image": {
+                                "xlink:href": "/inc/coa/img/icon_triangle_warn.svg"
+                            },
+                            "g.notes": {
+                                "display": "none",
+                                "opacity": 1
+                            }
+                        },
+                        "block_code": "def filter_1(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None):\n    phantom.debug('filter_1() called')\n\n    # collect filtered artifact ids for 'if' condition 1\n    matched_artifacts_1, matched_results_1 = phantom.condition(\n        container=container,\n        conditions=[\n            [\"artifact:*.cef.type\", \"==\", \"CORRELATION\"],\n        ],\n        name=\"filter_1:condition_1\")\n\n    # call connected blocks if filtered artifacts or results\n    if matched_artifacts_1 or matched_results_1:\n        SOC_Email_Format(action=action, success=success, container=container, results=results, handle=handle, filtered_artifacts=matched_artifacts_1, filtered_results=matched_results_1)\n\n    # collect filtered artifact ids for 'if' condition 2\n    matched_artifacts_2, matched_results_2 = phantom.condition(\n        container=container,\n        conditions=[\n            [\"artifact:*.cef.type\", \"==\", \"BASE\"],\n        ],\n        name=\"filter_1:condition_2\")\n\n    # call connected blocks if filtered artifacts or results\n    if matched_artifacts_2 or matched_results_2:\n        SOC_Email_Format(action=action, success=success, container=container, results=results, handle=handle, filtered_artifacts=matched_artifacts_2, filtered_results=matched_results_2)\n\n    return",
+                        "callback_code": "",
+                        "callback_start": 1,
+                        "callsback": false,
+                        "connected_to_start": true,
+                        "connection_name": "",
+                        "connection_type": "",
+                        "custom_callback": "",
+                        "custom_code": "def filter_1(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None):\n    phantom.debug('filter_1() called')\n\n    # collect filtered artifact ids for 'if' condition 1\n    matched_artifacts_1, matched_results_1 = phantom.condition(\n        container=container,\n        conditions=[\n            [\"artifact:*.cef.type\", \"==\", \"CORRELATION\"],\n        ],\n        name=\"filter_1:condition_1\")\n\n    # collect filtered artifact ids for 'if' condition 2\n    matched_artifacts_2, matched_results_2 = phantom.condition(\n        container=container,\n        conditions=[\n            [\"artifact:*.cef.type\", \"==\", \"BASE\"],\n        ],\n        name=\"filter_1:condition_2\")\n\n    SOC_Email_Format(action=action, success=success, container=container, results=results, handle=handle, filtered_artifacts=matched_artifacts_2, filtered_results=matched_results_2)\n\n    return",
+                        "custom_join": "",
+                        "custom_name": "",
+                        "description": "",
+                        "has_custom": true,
+                        "has_custom_block": true,
+                        "has_custom_callback": false,
+                        "has_custom_join": false,
+                        "id": "14822ed8-e2af-4dfc-81a0-6b397cd1aaf6",
+                        "inPorts": [
+                            "in"
+                        ],
+                        "join_code": "",
+                        "join_optional": [],
+                        "join_start": 1,
+                        "line_end": 269,
+                        "line_start": 246,
+                        "name": "filter",
+                        "notes": "",
+                        "number": 1,
+                        "outPorts": [
+                            "out-1",
+                            "out-2"
+                        ],
+                        "outputs": [
+                            {
+                                "conditions": [
+                                    {
+                                        "comparison": "==",
+                                        "data_type": "",
+                                        "param": "artifact:*.cef.type",
+                                        "value": "CORRELATION"
+                                    }
+                                ],
+                                "display": "If",
+                                "logic": "and",
+                                "type": "if"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "comparison": "==",
+                                        "data_type": "",
+                                        "param": "artifact:*.cef.type",
+                                        "value": "BASE"
+                                    }
+                                ],
+                                "display": "If",
+                                "logic": "and",
+                                "type": "if"
+                            }
+                        ],
+                        "ports": {
+                            "groups": {
+                                "in": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "left"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "left"
+                                    }
+                                },
+                                "out": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "right"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "right"
+                                    }
+                                }
+                            }
+                        },
+                        "position": {
+                            "x": 240,
+                            "y": 220
+                        },
+                        "previous_function": "",
+                        "previous_name": "filter_1",
+                        "show_number": true,
+                        "size": {
+                            "height": 82,
+                            "width": 82
+                        },
+                        "state": "filter",
+                        "status": "",
+                        "type": "coa.Filter",
+                        "warn": false,
+                        "z": 684
+                    },
+                    {
+                        "active": false,
+                        "angle": 0,
+                        "attrs": {
+                            ".background": {
+                                "transform": "rotate(45 30 70)"
+                            },
+                            ".border": {
+                                "transform": "rotate(45 30 70)"
+                            },
+                            ".inPorts>.port-0>.port-body": {
+                                "port": {
+                                    "id": "in",
+                                    "type": "in"
+                                }
+                            },
+                            ".number": {
+                                "text": 2
+                            },
+                            ".outPorts>.port-0": {
+                                "port": {
+                                    "id": "out-1",
+                                    "type": "out"
+                                },
+                                "ref-x": 83,
+                                "ref-y": 40
+                            },
+                            ".outPorts>.port-0>.port-body": {
+                                "port": {
+                                    "id": "out-1",
+                                    "type": "out"
+                                }
+                            },
+                            "g.error": {
+                                "opacity": 0
+                            },
+                            "g.notes": {
+                                "display": "block",
+                                "opacity": 1
+                            }
+                        },
+                        "block_code": "# read-only block view not available",
+                        "callback_code": "",
+                        "callback_start": 1,
+                        "callsback": false,
+                        "connected_to_start": true,
+                        "connection_name": "Get Failed Results",
+                        "connection_type": "action",
+                        "custom_callback": "",
+                        "custom_code": "def Parse_Failed_Results(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None):\n    phantom.debug('Parse_Failed_Results() called')\n    \n    response = phantom.collect2(container=container, datapath=['Get_Failed_Results:action_result.data.*.response_body'])[0][0]\n    phantom.debug(response)\n\n    action_results = []\n    #for action_result in response['data']:\n    #    result_id = action_result['id']\n    #    phantom.debug(result_id)\n    failed_results = []\n\n    for action_result in response['data']:\n        action_results.insert(0, action_result)\n        if action_result['status'] != 'success':\n            failed_results.insert(0, action_result)\n\n    phantom.save_object(key='results_object', container_id=container['id'], value={'data': {'action_results': action_results, 'failed_results': failed_results}})\n    Get_Parent_Playbook_Name(container=container)\n\n    return",
+                        "custom_join": "",
+                        "custom_name": "Parse Failed Results",
+                        "description": "Parses Failed results and adds context",
+                        "has_custom": true,
+                        "has_custom_block": true,
+                        "has_custom_callback": false,
+                        "has_custom_join": false,
+                        "id": "c120ac3d-f560-4fdf-a764-900b59920be3",
+                        "inPorts": [
+                            "in"
+                        ],
+                        "join_code": "",
+                        "join_optional": [],
+                        "join_start": 1,
+                        "line_end": 320,
+                        "line_start": 298,
+                        "name": "filter",
+                        "notes": "Parses Failed results and adds context",
+                        "number": 2,
+                        "outPorts": [
+                            "out-1"
+                        ],
+                        "outputs": [
+                            {
+                                "conditions": [
+                                    {
+                                        "comparison": "==",
+                                        "data_type": "",
+                                        "param": "",
+                                        "value": ""
+                                    }
+                                ],
+                                "display": "If",
+                                "logic": "and",
+                                "type": "if"
+                            }
+                        ],
+                        "ports": {
+                            "groups": {
+                                "in": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "left"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "left"
+                                    }
+                                },
+                                "out": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "right"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "right"
+                                    }
+                                }
+                            }
+                        },
+                        "position": {
+                            "x": 400,
+                            "y": 80
+                        },
+                        "previous_function": "",
+                        "previous_name": "Parse_Failed_Results",
+                        "show_number": true,
+                        "size": {
+                            "height": 82,
+                            "width": 82
+                        },
+                        "state": "filter",
+                        "status": "",
+                        "type": "coa.Filter",
+                        "warn": false,
+                        "z": 690
+                    },
+                    {
+                        "active": false,
+                        "angle": 0,
+                        "attrs": {
+                            ".background": {
+                                "transform": "rotate(45 30 70)"
+                            },
+                            ".border": {
+                                "transform": "rotate(45 30 70)"
+                            },
+                            ".inPorts>.port-0>.port-body": {
+                                "port": {
+                                    "id": "in",
+                                    "type": "in"
+                                }
+                            },
+                            ".number": {
+                                "text": 1
+                            },
+                            ".outPorts>.port-0": {
+                                "port": {
+                                    "id": "out-1",
+                                    "type": "out"
+                                },
+                                "ref-x": 83,
+                                "ref-y": 40
+                            },
+                            ".outPorts>.port-0>.port-body": {
+                                "port": {
+                                    "id": "out-1",
+                                    "type": "out"
+                                }
+                            },
+                            "g.error": {
+                                "opacity": 0
+                            },
+                            "g.notes": {
+                                "display": "block",
+                                "opacity": 1
+                            }
+                        },
+                        "block_code": "# read-only block view not available",
+                        "callback_code": "",
+                        "callback_start": 1,
+                        "callsback": false,
+                        "connected_to_start": true,
+                        "connection_name": "Get Parent Playbook Name",
+                        "connection_type": "action",
+                        "custom_callback": "",
+                        "custom_code": "def Error_Email_Format(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None):\n    phantom.debug('Error_Email_Format() called')\n    \n    # collect Action Results\n    results_object = phantom.get_object(key='results_object', container_id=container['id'])[0]['value']['data']\n    action_results = results_object['action_results']\n    failed_results = results_object['failed_results']\n    result_template = \"{0} [{1}]: ({2})\"\n        \n    #Remove unnecessary Objects from container\n    phantom.clear_object(key='results_object', container_id=container['id'])\n    \n    #Get Artifact Info\n    artifact_names = phantom.collect2(container, datapath=['artifact:*.name'])    \n    artifact_count = container['artifact_count']\n\n    #Get Parent Playbook Data\n    parent_playbook_name = phantom.collect2(container=container, datapath=['Get_Parent_Playbook_Name:action_result.data.*.response_body'])[0][0]['name']\n    phantom.debug('Parent Playbook Name: {}'.format(parent_playbook_name))\n\n    body=\"<html><head>\"\n    body+=\"<style>\"\n    body+=\"body {font-family: Calibri, Verdana, Ariel, sans-serif}\"\n    body+=\"table {border-collapse: collapse; width: 60%;} th, td {text-align: left; padding: 5px; border: 1px solid black}\"\n    body+=\"th {background-color: #808080; color: white;}\"\n    body+=\"th, h3 {text-align: center;}\"\n    body+=\"</style></head>\"\n    \n    body+=\"<body>\"  \n    body+=\"<h3>Playbook Error - \" + parent_playbook_name + \"</h3>\"\n    body+=\"<p>Container ID: {}<br>\".format(str(container['id']))\n    body+=\"Failed Playbook: {}<br>\".format(str(parent_playbook_name))\n    body+=\"Number of Artifacts in Container: {}</p>\".format(str(container['artifact_count']))\n    if artifact_names:\n        body+=\"<b>Artifact Names</b>\"\n        body+=\"<ul>\"\n        for artifact in artifact_names:\n            body+=\"<li>\" + artifact[0] + \"</li>\"\n        body+=\"</ul>\"\n    \n    if failed_results:\n        body+=\"<p><b>Failed Actions</b></p>\"\n        body+=\"<ol>\"\n        for failed_result in failed_results:\n            body+=\"<li>\"+ result_template.format(failed_result['name'], failed_result['action'], failed_result['status']) +\"</li>\"\n            body+=\"<ul><li>Message: {}</li></ul>\".format(failed_result['message']) \n        body+=\"</ol>\"\n        \n    if action_results:\n        body+=\"<p><b>Action Summary</b></p>\"\n        body+=\"<ol>\"\n        for action_result in action_results:\n            if action_result['status'] == 'failed':\n                body+=\"<li style='color:red;'>\"+ result_template.format(action_result['name'], action_result['action'], action_result['status']) +\"</li>\"\n                body+=\"<ul><li>Message: {}</li></ul>\".format(action_result['message']) \n            else:\n                body+=\"<li>\"+ result_template.format(action_result['name'], action_result['action'], action_result['status']) +\"</li>\"\n                body+=\"<ul><li>Message: {}</li></ul>\".format(action_result['message']) \n        body+=\"</ol>\"\n    \n    #Collect all objects saved throughout playbook executions\n    saved_objects = phantom.get_object(key='%', container_id=container['id'])\n    if len(saved_objects) > 0:\n        saved_objects_body = \"<div align='center'>\"\n        for saved_object in saved_objects:\n            object_name = saved_object['composite_key']['key']\n            object_data = saved_object['value']['data']\n\n            saved_objects_body+=\"<table>\"\n            saved_objects_body+=\"<tr><th colspan='2'>\" + str(object_name) + \"</th></tr>\"\n            for k,v in object_data.items():\n                saved_objects_body += '<tr><td>' + str(k) + '</td>'\n                if isinstance(v,dict):\n                    saved_objects_body += '<td><ul>'\n                    for i,j in v.items():\n                        if isinstance(j, basestring):\n                            j = j.encode('utf-8') \n                        saved_objects_body += '<li>' + str(i) + ': ' + str(j) + '</li>'\n                        \n                    saved_objects_body += '</ul></td></tr>'\n                else:\n                    if isinstance(v, basestring):\n                        v = v.encode('utf-8')\n                    saved_objects_body += '<td>' + str(v) + '</td></tr>'\n            saved_objects_body += '</table><br>'\n        saved_objects_body += '</div>'\n        body+=\"<p><b>Saved Objects</b></p>\"\n        body+=saved_objects_body\n\n    body+=\"<p><strong style='color: black;'>Sent from Phantom Tool</strong></p>\"\n    body+=\"</body></html>\"\n    \n    parameters = []\n\n    phantom.format(container=container, template=body, parameters=parameters, name=\"Error_Email_Format\")\n\n    Error_Handling_Email(container=container)\n\n    return",
+                        "custom_join": "",
+                        "custom_name": "Error Email Format",
+                        "description": "Formats the data for the Error Handling Email",
+                        "has_custom": true,
+                        "has_custom_block": true,
+                        "has_custom_callback": false,
+                        "has_custom_join": false,
+                        "id": "3809fe39-8b6f-4797-871f-f3f7178c7f29",
+                        "inPorts": [
+                            "in"
+                        ],
+                        "join_code": "",
+                        "join_optional": [],
+                        "join_start": 1,
+                        "line_end": 423,
+                        "line_start": 323,
+                        "name": "format",
+                        "notes": "Formats the data for the Error Handling Email",
+                        "number": 1,
+                        "outPorts": [
+                            "out-1"
+                        ],
+                        "parameters": [
+                            {
+                                "position": 0,
+                                "type": "",
+                                "value": ""
+                            }
+                        ],
+                        "ports": {
+                            "groups": {
+                                "in": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "left"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "left"
+                                    }
+                                },
+                                "out": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "right"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "right"
+                                    }
+                                }
+                            }
+                        },
+                        "position": {
+                            "x": 740,
+                            "y": 80
+                        },
+                        "previous_function": "",
+                        "previous_name": "Error_Email_Format",
+                        "show_number": true,
+                        "size": {
+                            "height": 82,
+                            "width": 82
+                        },
+                        "state": "format",
+                        "status": "",
+                        "template": "{0}",
+                        "type": "coa.Format",
+                        "warn": false,
+                        "z": 692
+                    },
+                    {
+                        "action": "get data",
+                        "action_type": "generic",
+                        "active": false,
+                        "active_keys": {},
+                        "active_values": {
+                            "headers": "",
+                            "location": "Get_Failed_Results:action_result.data.*.response_body",
+                            "verify_certificate": "False"
+                        },
+                        "angle": 0,
+                        "approver": "",
+                        "assets": [
+                            {
+                                "app_name": "HTTP",
+                                "app_version": "2.0.10",
+                                "fields": {
+                                    "headers": "",
+                                    "location": "Get_Failed_Results:action_result.data.*.response_body",
+                                    "verify_certificate": "False"
+                                },
+                                "name": "phantom rest api",
+                                "output": [
+                                    {
+                                        "data_path": "action_result.data.*.method",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "contains": [
+                                            "url"
+                                        ],
+                                        "data_path": "action_result.data.*.location",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.data.*.response_body",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.data.*.response_headers",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.status",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.message",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.summary.status_code",
+                                        "data_type": "numeric"
+                                    },
+                                    {
+                                        "data_path": "action_result.summary.reason",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.headers",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.location",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.verify_certificate",
+                                        "data_type": "boolean"
+                                    }
+                                ],
+                                "product_name": "HTTP",
+                                "product_vendor": "Generic"
+                            }
+                        ],
+                        "attrs": {
+                            ".action": {
+                                "text": "Get Parent Playbook..."
+                            },
+                            ".background": {
+                                "height": 88
+                            },
+                            ".border": {
+                                "height": 88
+                            },
+                            ".color-band": {
+                                "fill": "#5094D4"
+                            },
+                            ".inPorts>.port-in": {
+                                "ref": ".background",
+                                "ref-x": 0.5
+                            },
+                            ".inPorts>.port-in>.port-body": {
+                                "port": {
+                                    "id": "in",
+                                    "type": "in"
+                                }
+                            },
+                            ".message": {
+                                "ref-x": 16,
+                                "ref-y": 70,
+                                "text": ""
+                            },
+                            ".outPorts>.port-out": {
+                                "ref": ".background",
+                                "ref-x": 0.5
+                            },
+                            ".outPorts>.port-out>.port-body": {
+                                "port": {
+                                    "id": "out",
+                                    "type": "out"
+                                }
+                            },
+                            ".status": {
+                                "fill": "#FFFFFF",
+                                "ref-y": 68
+                            },
+                            ".title": {
+                                "text": "Generic"
+                            },
+                            "g.code image": {
+                                "xlink:href": "/inc/coa/img/icon_code_on.svg"
+                            },
+                            "g.error": {
+                                "opacity": 0
+                            },
+                            "g.notes": {
+                                "display": "block",
+                                "opacity": 1
+                            },
+                            "rect.warn-background": {
+                                "fill": "#FFFFFF"
+                            },
+                            "text.icon": {
+                                "fill": "#FFFFFF"
+                            }
+                        },
+                        "block_code": "# read-only block view not available",
+                        "callback_code": "",
+                        "callback_start": 1,
+                        "callsback": true,
+                        "color": "#5094D4",
+                        "connected_to_start": true,
+                        "connection_name": "Get Failed Results",
+                        "connection_type": "action",
+                        "custom_callback": "",
+                        "custom_code": "def Get_Parent_Playbook_Name(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None):\n    phantom.debug('Get_Parent_Playbook_Name() called')\n    \n    #phantom.debug('Action: {0} {1}'.format(action['name'], ('SUCCEEDED' if success else 'FAILED')))\n    \n    # collect data for 'Get_Parent_Playbook_Name' call\n    results_data_1 = phantom.collect2(container=container, datapath=['Get_Failed_Results:action_result.data.*.response_body'])\n    parent_playbook_id = None\n    try:\n        parent_playbook_id = results_data_1[0][0]['data'][0]['playbook']\n    except (TypeError, IndexError, KeyError):\n        pass\n    \n    phantom.debug('Parent Playbook Id: {}'.format(parent_playbook_id))\n\n    parameters = []\n    \n    # build parameters list for 'Get_Parent_Playbook_Name' call\n    if parent_playbook_id:\n        parameters.append({\n            #\"/action_run/?_filter_playbook_run='{}'\".format(parent_playbook_id),\n            'location': \"/playbook/{}\".format(parent_playbook_id),\n            'verify_certificate': False,\n            'headers': json.dumps({'Content-type': 'application/json'}),\n        })\n\n        phantom.act(\"get data\", parameters=parameters, callback=Error_Email_Format, assets=['phantom rest api'], name=\"Get_Parent_Playbook_Name\")\n        return\n        \n    Error_Email_Format(container=container)\n    \n    return",
+                        "custom_join": "",
+                        "custom_name": "Get Parent Playbook Name",
+                        "delay": 0,
+                        "description": "Get name of Parent Playbook",
+                        "has_custom": true,
+                        "has_custom_block": true,
+                        "has_custom_callback": false,
+                        "has_custom_join": false,
+                        "id": "e43843f6-7baa-4a37-a0ce-fcc5f5bf88f2",
+                        "inPorts": [
+                            "in"
+                        ],
+                        "join_code": "",
+                        "join_optional": [],
+                        "join_start": 1,
+                        "line_end": 459,
+                        "line_start": 426,
+                        "message": "",
+                        "name": "get data",
+                        "notes": "Get name of Parent Playbook",
+                        "number": 3,
+                        "outPorts": [
+                            "out"
+                        ],
+                        "ports": {
+                            "groups": {
+                                "in": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "left"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "left"
+                                    }
+                                },
+                                "out": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "right"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "right"
+                                    }
+                                }
+                            }
+                        },
+                        "position": {
+                            "x": 520,
+                            "y": 80
+                        },
+                        "previous_function": "",
+                        "previous_name": "Get_Parent_Playbook_Name",
+                        "required_params": {},
+                        "reviewer": "",
+                        "show_number": true,
+                        "size": {
+                            "height": 112,
+                            "width": 168
+                        },
+                        "state": "asset",
+                        "status": "",
+                        "title": "Generic",
+                        "type": "coa.Action",
+                        "warn": false,
+                        "z": 693
+                    },
+                    {
+                        "action": "send email",
+                        "action_type": "generic",
+                        "active": false,
+                        "active_keys": {},
+                        "active_values": {
+                            "attachments": "",
+                            "body": "SOC_Email_Format:formatted_data",
+                            "from": "phantom@mycompany.com",
+                            "subject": "Phantom Dev - General Error",
+                            "to": "you@mycompany.com"
+                        },
+                        "angle": 0,
+                        "approver": "",
+                        "assets": [
+                            {
+                                "app_name": "SMTP",
+                                "app_version": "1.2.29",
+                                "fields": {
+                                    "attachments": "",
+                                    "body": "SOC_Email_Format:formatted_data",
+                                    "from": "phantom@mycompany.com",
+                                    "subject": "Phantom Dev - General Error",
+                                    "to": "you@mycompany.com"
+                                },
+                                "name": "smtp",
+                                "output": [
+                                    {
+                                        "data_path": "action_result.status",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.message",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.body",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "contains": [
+                                            "email"
+                                        ],
+                                        "data_path": "action_result.parameter.to",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "contains": [
+                                            "email"
+                                        ],
+                                        "data_path": "action_result.parameter.from",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "contains": [
+                                            "vault id"
+                                        ],
+                                        "data_path": "action_result.parameter.attachments",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.subject",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "summary.total_objects",
+                                        "data_type": "numeric"
+                                    },
+                                    {
+                                        "data_path": "summary.total_objects_successful",
+                                        "data_type": "numeric"
+                                    }
+                                ],
+                                "product_name": "SMTP",
+                                "product_vendor": "Generic",
+                                "type": "email"
+                            }
+                        ],
+                        "attrs": {
+                            ".action": {
+                                "text": "SOC Email"
+                            },
+                            ".background": {
+                                "height": 88
+                            },
+                            ".color-band": {
+                                "fill": "#5094D4"
+                            },
+                            ".inPorts>.port-in": {
+                                "ref": ".background",
+                                "ref-x": 0.5
+                            },
+                            ".inPorts>.port-in>.port-body": {
+                                "port": {
+                                    "id": "in",
+                                    "type": "in"
+                                }
+                            },
+                            ".message": {
+                                "ref-x": 16,
+                                "ref-y": 70,
+                                "text": ""
+                            },
+                            ".outPorts>.port-out": {
+                                "ref": ".background",
+                                "ref-x": 0.5
+                            },
+                            ".outPorts>.port-out>.port-body": {
+                                "port": {
+                                    "id": "out",
+                                    "type": "out"
+                                }
+                            },
+                            ".status": {
+                                "fill": "#FFFFFF",
+                                "ref-y": 68
+                            },
+                            ".title": {
+                                "text": "Generic"
+                            },
+                            "g.error": {
+                                "opacity": 0
+                            },
+                            "g.notes": {
+                                "display": "block",
+                                "opacity": 1
+                            },
+                            "rect.warn-background": {
+                                "fill": "#FFFFFF"
+                            },
+                            "text.icon": {
+                                "fill": "#FFFFFF"
+                            }
+                        },
+                        "block_code": "def SOC_Email(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None):\n    phantom.debug('SOC_Email() called')\n\n    # collect data for 'SOC_Email' call\n    formatted_data_1 = phantom.get_format_data(name='SOC_Email_Format')\n\n    parameters = []\n    \n    # build parameters list for 'SOC_Email' call\n    parameters.append({\n        'from': \"phantom@mycompany.com\",\n        'to': \"you@mycompany.com\",\n        'subject': \"Phantom Dev - General Error\",\n        'body': formatted_data_1,\n        'attachments': \"\",\n    })\n\n    phantom.act(\"send email\", parameters=parameters, assets=['smtp'], name=\"SOC_Email\")    \n    \n    return",
+                        "callback_code": "",
+                        "callback_start": 1,
+                        "callsback": true,
+                        "color": "#5094D4",
+                        "connected_to_start": true,
+                        "connection_name": "",
+                        "connection_type": "",
+                        "custom_callback": "",
+                        "custom_code": "",
+                        "custom_join": "",
+                        "custom_name": "SOC Email",
+                        "delay": 0,
+                        "description": "Email for SOC",
+                        "has_custom": true,
+                        "has_custom_block": false,
+                        "has_custom_callback": false,
+                        "has_custom_join": false,
+                        "id": "292b04ec-be0d-4fce-bca6-d4359c116138",
+                        "inPorts": [
+                            "in"
+                        ],
+                        "join_code": "",
+                        "join_optional": [],
+                        "join_start": 1,
+                        "line_end": 224,
+                        "line_start": 203,
+                        "message": "",
+                        "name": "send email",
+                        "notes": "Email for SOC",
+                        "number": 3,
+                        "outPorts": [
+                            "out"
+                        ],
+                        "ports": {
+                            "groups": {
+                                "in": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "left"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "left"
+                                    }
+                                },
+                                "out": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "right"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "right"
+                                    }
+                                }
+                            }
+                        },
+                        "position": {
+                            "x": 860,
+                            "y": 220
+                        },
+                        "previous_function": "",
+                        "previous_name": "SOC_Email",
+                        "required_params": {
+                            "body": true,
+                            "to": true
+                        },
+                        "reviewer": "",
+                        "show_number": true,
+                        "size": {
+                            "height": 112,
+                            "width": 168
+                        },
+                        "state": "asset",
+                        "status": "",
+                        "title": "Generic",
+                        "type": "coa.Action",
+                        "warn": "",
+                        "z": 696
+                    },
+                    {
+                        "action": "send email",
+                        "action_type": "generic",
+                        "active": false,
+                        "active_keys": {},
+                        "active_values": {
+                            "attachments": "",
+                            "body": "Error_Email_Format:formatted_data",
+                            "from": "phantom@mycompany.com",
+                            "subject": "Dev Playbook Error",
+                            "to": "you@mycompany.com"
+                        },
+                        "angle": 0,
+                        "approver": "",
+                        "assets": [
+                            {
+                                "app_name": "SMTP",
+                                "app_version": "1.2.29",
+                                "fields": {
+                                    "attachments": "",
+                                    "body": "Error_Email_Format:formatted_data",
+                                    "from": "phantom@mycompany.com",
+                                    "subject": "Dev Playbook Error",
+                                    "to": "you@mycompany.com"
+                                },
+                                "name": "smtp",
+                                "output": [
+                                    {
+                                        "data_path": "action_result.status",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.message",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.body",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "contains": [
+                                            "email"
+                                        ],
+                                        "data_path": "action_result.parameter.to",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "contains": [
+                                            "email"
+                                        ],
+                                        "data_path": "action_result.parameter.from",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "contains": [
+                                            "vault id"
+                                        ],
+                                        "data_path": "action_result.parameter.attachments",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.subject",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "summary.total_objects",
+                                        "data_type": "numeric"
+                                    },
+                                    {
+                                        "data_path": "summary.total_objects_successful",
+                                        "data_type": "numeric"
+                                    }
+                                ],
+                                "product_name": "SMTP",
+                                "product_vendor": "Generic",
+                                "type": "email"
+                            }
+                        ],
+                        "attrs": {
+                            ".action": {
+                                "text": "Error Handling Email"
+                            },
+                            ".background": {
+                                "height": 88
+                            },
+                            ".color-band": {
+                                "fill": "#5094D4"
+                            },
+                            ".inPorts>.port-in": {
+                                "ref": ".background",
+                                "ref-x": 0.5
+                            },
+                            ".inPorts>.port-in>.port-body": {
+                                "port": {
+                                    "id": "in",
+                                    "type": "in"
+                                }
+                            },
+                            ".message": {
+                                "ref-x": 16,
+                                "ref-y": 70,
+                                "text": ""
+                            },
+                            ".outPorts>.port-out": {
+                                "ref": ".background",
+                                "ref-x": 0.5
+                            },
+                            ".outPorts>.port-out>.port-body": {
+                                "port": {
+                                    "id": "out",
+                                    "type": "out"
+                                }
+                            },
+                            ".status": {
+                                "fill": "#FFFFFF",
+                                "ref-y": 68
+                            },
+                            ".title": {
+                                "text": "Generic"
+                            },
+                            "g.error": {
+                                "opacity": 0
+                            },
+                            "g.notes": {
+                                "display": "block",
+                                "opacity": 1
+                            },
+                            "rect.warn-background": {
+                                "fill": "#FFFFFF"
+                            },
+                            "text.icon": {
+                                "fill": "#FFFFFF"
+                            }
+                        },
+                        "block_code": "def Error_Handling_Email(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None):\n    phantom.debug('Error_Handling_Email() called')\n    \n    #phantom.debug('Action: {0} {1}'.format(action['name'], ('SUCCEEDED' if success else 'FAILED')))\n    \n    # collect data for 'Error_Handling_Email' call\n    formatted_data_1 = phantom.get_format_data(name='Error_Email_Format')\n\n    parameters = []\n    \n    # build parameters list for 'Error_Handling_Email' call\n    parameters.append({\n        'from': \"phantom@mycompany.com\",\n        'to': \"you@mycompany.com\",\n        'subject': \"Dev Playbook Error\",\n        'body': formatted_data_1,\n        'attachments': \"\",\n    })\n\n    phantom.act(\"send email\", parameters=parameters, assets=['smtp'], name=\"Error_Handling_Email\")    \n    \n    return",
+                        "callback_code": "",
+                        "callback_start": 1,
+                        "callsback": true,
+                        "color": "#5094D4",
+                        "connected_to_start": true,
+                        "connection_name": "Get Parent Playbook Name",
+                        "connection_type": "action",
+                        "custom_callback": "",
+                        "custom_code": "",
+                        "custom_join": "",
+                        "custom_name": "Error Handling Email",
+                        "delay": 0,
+                        "description": "Send Errors to Active Defense team for further investigation",
+                        "has_custom": true,
+                        "has_custom_block": false,
+                        "has_custom_callback": false,
+                        "has_custom_join": false,
+                        "id": "b7ee82d9-de2f-468b-8caf-35235a409074",
+                        "inPorts": [
+                            "in"
+                        ],
+                        "join_code": "",
+                        "join_optional": [],
+                        "join_start": 1,
+                        "line_end": 295,
+                        "line_start": 272,
+                        "message": "",
+                        "name": "send email",
+                        "notes": "Send Errors to Active Defense team for further investigation",
+                        "number": 2,
+                        "outPorts": [
+                            "out"
+                        ],
+                        "ports": {
+                            "groups": {
+                                "in": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "left"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "left"
+                                    }
+                                },
+                                "out": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "right"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "right"
+                                    }
+                                }
+                            }
+                        },
+                        "position": {
+                            "x": 860,
+                            "y": 80
+                        },
+                        "previous_function": "",
+                        "previous_name": "Error_Handling_Email",
+                        "required_params": {
+                            "body": true,
+                            "to": true
+                        },
+                        "reviewer": "",
+                        "show_number": true,
+                        "size": {
+                            "height": 112,
+                            "width": 168
+                        },
+                        "state": "asset",
+                        "status": "",
+                        "title": "Generic",
+                        "type": "coa.Action",
+                        "warn": "",
+                        "z": 697
+                    },
+                    {
+                        "0": "E",
+                        "1": "N",
+                        "2": "D",
+                        "active": false,
+                        "angle": 0,
+                        "attrs": {
+                            ".inPorts>.port-in": {
+                                "ref": ".background",
+                                "ref-x": 0.5
+                            },
+                            ".inPorts>.port-in>.port-body": {
+                                "port": {
+                                    "id": "in",
+                                    "type": "in"
+                                }
+                            },
+                            ".title": {
+                                "text": "END"
+                            },
+                            "g.error": {
+                                "opacity": 0
+                            },
+                            "g.notes": {
+                                "display": "none",
+                                "opacity": 1
+                            },
+                            "rect.warn-background": {
+                                "fill": "#FFFFFF"
+                            },
+                            "text.icon": {
+                                "color": "#FFFFFF"
+                            }
+                        },
+                        "block_code": "def on_finish(container, summary):\n    phantom.debug('on_finish() called')\n    # This function is called after all actions are completed.\n    # summary of all the action and/or all detals of actions \n    # can be collected here.\n\n    # summary_json = phantom.get_summary()\n    # if 'result' in summary_json:\n        # for action_result in summary_json['result']:\n            # if 'action_run_id' in action_result:\n                # action_results = phantom.get_action_results(action_run_id=action_result['action_run_id'], result_data=False, flatten=False)\n                # phantom.debug(action_results)\n\n    return",
+                        "callback_code": "# read-only block view not available",
+                        "callback_start": 1,
+                        "callsback": false,
+                        "connected_to_start": true,
+                        "connection_name": "Error Handling Email, SOC Email",
+                        "connection_type": "action",
+                        "custom_callback": "",
+                        "custom_code": "",
+                        "custom_join": "",
+                        "custom_name": "",
+                        "description": "",
+                        "has_custom": true,
+                        "has_custom_block": false,
+                        "has_custom_callback": false,
+                        "has_custom_join": false,
+                        "id": "5be2bf8a-9e7b-49b1-a464-7bac4699a897",
+                        "inPorts": [
+                            "in"
+                        ],
+                        "join_code": "# read-only block view not available",
+                        "join_optional": [],
+                        "join_start": 1,
+                        "line_end": 472,
+                        "line_start": 459,
+                        "name": "",
+                        "notes": "",
+                        "number": 0,
+                        "outPorts": [],
+                        "ports": {
+                            "groups": {
+                                "in": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "left"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "left"
+                                    }
+                                },
+                                "out": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "right"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "right"
+                                    }
+                                }
+                            }
+                        },
+                        "position": {
+                            "x": 1100,
+                            "y": 160
+                        },
+                        "previous_function": "",
+                        "previous_name": "",
+                        "show_number": true,
+                        "size": {
+                            "height": 48,
+                            "width": 96
+                        },
+                        "status": "",
+                        "title": "END",
+                        "type": "coa.StartEnd",
+                        "warn": false,
+                        "z": 698
+                    },
+                    {
+                        "0": "S",
+                        "1": "T",
+                        "2": "A",
+                        "3": "R",
+                        "4": "T",
+                        "active": false,
+                        "angle": 0,
+                        "attrs": {
+                            ".outPorts>.port-out": {
+                                "ref": ".background",
+                                "ref-x": 0.5
+                            },
+                            ".outPorts>.port-out>.port-body": {
+                                "port": {
+                                    "id": "out",
+                                    "type": "out"
+                                }
+                            },
+                            ".title": {
+                                "text": "START"
+                            },
+                            "g.error": {
+                                "opacity": 0
+                            },
+                            "g.notes": {
+                                "display": "none",
+                                "opacity": 1
+                            },
+                            "rect.warn-background": {
+                                "fill": "#FFFFFF"
+                            },
+                            "text.icon": {
+                                "color": "#FFFFFF"
+                            }
+                        },
+                        "block_code": "def on_start(container):\n    phantom.debug('on_start() called')\n    \n    # call 'Get_Failed_Results' block\n    Get_Failed_Results(container=container)\n\n    # call 'filter_1' block\n    filter_1(container=container)\n\n    return",
+                        "callback_code": "# read-only block view not available",
+                        "callback_start": 1,
+                        "callsback": false,
+                        "connected_to_start": false,
+                        "connection_name": "",
+                        "connection_type": "",
+                        "custom_callback": "",
+                        "custom_code": "",
+                        "custom_join": "",
+                        "custom_name": "",
+                        "description": "",
+                        "has_custom": true,
+                        "has_custom_block": false,
+                        "has_custom_callback": false,
+                        "has_custom_join": false,
+                        "id": "33946a69-8ec1-4890-88f9-cc7c0c30e7d6",
+                        "inPorts": [],
+                        "join_code": "# read-only block view not available",
+                        "join_optional": [],
+                        "join_start": 1,
+                        "line_end": 30,
+                        "line_start": 19,
+                        "name": "",
+                        "notes": "",
+                        "number": 0,
+                        "outPorts": [
+                            "out"
+                        ],
+                        "ports": {
+                            "groups": {
+                                "in": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "left"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "left"
+                                    }
+                                },
+                                "out": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "right"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "right"
+                                    }
+                                }
+                            }
+                        },
+                        "position": {
+                            "x": 40,
+                            "y": 100
+                        },
+                        "previous_function": "",
+                        "previous_name": "",
+                        "show_number": true,
+                        "size": {
+                            "height": 48,
+                            "width": 96
+                        },
+                        "status": "",
+                        "title": "START",
+                        "type": "coa.StartEnd",
+                        "warn": false,
+                        "z": 699
+                    },
+                    {
+                        "action": "get data",
+                        "action_type": "generic",
+                        "active": false,
+                        "active_keys": {},
+                        "active_values": {
+                            "headers": "",
+                            "location": "",
+                            "verify_certificate": ""
+                        },
+                        "angle": 0,
+                        "approver": "",
+                        "assets": [
+                            {
+                                "app_name": "HTTP",
+                                "app_version": "2.0.10",
+                                "fields": {
+                                    "headers": "",
+                                    "location": "",
+                                    "verify_certificate": ""
+                                },
+                                "name": "phantom rest api",
+                                "output": [
+                                    {
+                                        "data_path": "action_result.data.*.method",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "contains": [
+                                            "url"
+                                        ],
+                                        "data_path": "action_result.data.*.location",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.data.*.response_body",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.data.*.response_headers",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.status",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.message",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.summary.status_code",
+                                        "data_type": "numeric"
+                                    },
+                                    {
+                                        "data_path": "action_result.summary.reason",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.headers",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.location",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.verify_certificate",
+                                        "data_type": "boolean"
+                                    }
+                                ],
+                                "product_name": "HTTP",
+                                "product_vendor": "Generic"
+                            }
+                        ],
+                        "attrs": {
+                            ".action": {
+                                "text": "Get Failed Results"
+                            },
+                            ".background": {
+                                "height": 88
+                            },
+                            ".color-band": {
+                                "fill": "#5094D4"
+                            },
+                            ".inPorts>.port-in": {
+                                "ref": ".background",
+                                "ref-x": 0.5
+                            },
+                            ".inPorts>.port-in>.port-body": {
+                                "port": {
+                                    "id": "in",
+                                    "type": "in"
+                                }
+                            },
+                            ".message": {
+                                "ref-x": 16,
+                                "ref-y": 70,
+                                "text": ""
+                            },
+                            ".outPorts>.port-out": {
+                                "ref": ".background",
+                                "ref-x": 0.5
+                            },
+                            ".outPorts>.port-out>.port-body": {
+                                "port": {
+                                    "id": "out",
+                                    "type": "out"
+                                }
+                            },
+                            ".status": {
+                                "fill": "#FFFFFF",
+                                "ref-y": 68
+                            },
+                            ".title": {
+                                "text": "Generic"
+                            },
+                            "g.code image": {
+                                "xlink:href": "/inc/coa/img/icon_code_on.svg"
+                            },
+                            "g.error": {
+                                "opacity": 0
+                            },
+                            "g.notes": {
+                                "display": "block",
+                                "opacity": 1
+                            },
+                            "rect.warn-background": {
+                                "fill": "#FFFFFF"
+                            },
+                            "text.icon": {
+                                "fill": "#FFFFFF"
+                            }
+                        },
+                        "block_code": "def Get_Failed_Results(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None):\n    phantom.debug('Get_Failed_Results() called')\n\n    parameters = []\n\n    phantom.act(\"get data\", parameters=parameters, name=\"Get_Failed_Results\")    \n    \n    return",
+                        "callback_code": "",
+                        "callback_start": 1,
+                        "callsback": true,
+                        "color": "#5094D4",
+                        "connected_to_start": true,
+                        "connection_name": "",
+                        "connection_type": "",
+                        "custom_callback": "",
+                        "custom_code": "def Get_Failed_Results(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None):\n    phantom.debug('Get_Failed_Results() called')\n\n    # collect data for 'Get_Failed_Results' call\n    parent_playbook_id = phantom.get_playbook_info()[0]['parent_playbook_run_id']\n    \n    parameters = []\n    \n    # build parameters list for 'Get_Failed_Results' call\n    parameters.append({\n        'location': \"/action_run/?_filter_playbook_run='{}'\".format(parent_playbook_id),\n        'verify_certificate': False,\n        'headers': json.dumps({'Content-type': 'application/json'}),\n    })\n\n    phantom.act(\"get data\", parameters=parameters, assets=['phantom rest api'], callback=Parse_Failed_Results, name=\"Get_Failed_Results\")    \n    \n    return",
+                        "custom_join": "",
+                        "custom_name": "Get Failed Results",
+                        "delay": 0,
+                        "description": "Get names and messages of failed results from parent playbook execution",
+                        "has_custom": true,
+                        "has_custom_block": true,
+                        "has_custom_callback": false,
+                        "has_custom_join": false,
+                        "id": "75e607ba-153b-4419-8656-bb5305b5399d",
+                        "inPorts": [
+                            "in"
+                        ],
+                        "join_code": "",
+                        "join_optional": [],
+                        "join_start": 1,
+                        "line_end": 246,
+                        "line_start": 227,
+                        "message": "",
+                        "name": "get data",
+                        "notes": "Get names and messages of failed results from parent playbook execution",
+                        "number": 1,
+                        "outPorts": [
+                            "out"
+                        ],
+                        "ports": {
+                            "groups": {
+                                "in": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "left"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "left"
+                                    }
+                                },
+                                "out": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "right"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "right"
+                                    }
+                                }
+                            }
+                        },
+                        "position": {
+                            "x": 200,
+                            "y": 80
+                        },
+                        "previous_function": "",
+                        "previous_name": "Get_Failed_Results",
+                        "required_params": {},
+                        "reviewer": "",
+                        "show_number": true,
+                        "size": {
+                            "height": 112,
+                            "width": 168
+                        },
+                        "state": "asset",
+                        "status": "",
+                        "title": "Generic",
+                        "type": "coa.Action",
+                        "warn": false,
+                        "z": 700
+                    }
+                ]
+            },
+            "notes": ""
+        },
+        "schema": 2,
+        "version": "3.0.265"
+    },
+    "create_time": "2018-03-27T21:48:09.312109+00:00",
+    "draft_mode": false,
+    "labels": [
+        "email"
+    ]
+}
